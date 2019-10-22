@@ -45,8 +45,9 @@ G|TS-CNN (SBFL)|**0.6355**|**0.7126**|**0.9998**|**24.5836**|Trained by Self-bal
 ![compare_loss](./results/compare_loss_font14_2.svg)  
 Fig. 2. &nbsp;SBFL can balance the class0 loss and class1 loss in the training process to get better performance.  
  
---  
-**Table 1. Results on MR images**  
+.  
+.  
+Table 1. Results on MR images
 
 N&nbsp;|&nbsp; &nbsp; &nbsp; &nbsp;Original MR&nbsp;&nbsp;&nbsp; &nbsp; <br>images|Mukherjee et al. [4]|Residual U-Net [7]|&nbsp;  RS-RCNN [2]&nbsp; |Our Method  (TS-CNN)
 :--|:--:|:--:|:--:|:--:  
