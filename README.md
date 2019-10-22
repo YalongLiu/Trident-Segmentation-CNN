@@ -5,7 +5,8 @@
 <br>  
 ![TS-CNN](./results/TS-CNN.png)
 
-<center>**Fig. 1. A Deep Learning method to segment punctate white matter lesions (PWMLs).**</center>  
+<div align=center><b>Fig. 1. A Deep Learning method to segment punctate white matter lesions (PWMLs).</b></div>
+
 **Contributions:**  
 1.Trident Segmentation CNN (Convert spatial information into temporal information, which reduces the consumption of computing resources.)   
 2.Self-balancing Focal Loss (Balancing the loss of different classes in class imbalance situation and boost the model performance.)  
