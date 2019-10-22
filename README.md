@@ -3,7 +3,7 @@
 
 **Key words:** Deep Learning; Punctate white matter lesions (PWMLs); Brain tumor segmentation.
 <br>  
-<center>![TS-CNN](./results/TS-CNN.png)</center>  
+![TS-CNN](./results/TS-CNN.png)
 
 <center>**Fig. 1. A Deep Learning method to segment punctate white matter lesions (PWMLs).**</center>  
 **Contributions:**  
