@@ -50,10 +50,10 @@ Fig. 2. &nbsp;SBFL can balance the class0 loss and class1 loss in the training p
 Table 1. Results on MR images
 
 N&nbsp;|&nbsp; &nbsp; &nbsp; &nbsp;Original MR&nbsp;&nbsp;&nbsp; &nbsp; <br>images|Mukherjee et al. [4]|Residual U-Net [7]|&nbsp;  RS-RCNN [2]&nbsp; |Our Method  (TS-CNN)
-:--|:--:|:--:|:--:|:--:  
+:-|:-:|:-:|:-:|:-:|:-:|  
 
 &nbsp;1&nbsp;|![1](./results/69_61.png)
-:--|:--:|
+:-|:-:|
 &nbsp;2&nbsp;|![2](./results/75_60.png)  
 &nbsp;3&nbsp;|![3](./results/75_88.png)  
 &nbsp;4&nbsp;|![4](./results/107_68.png)
