@@ -43,7 +43,7 @@ G|TS-CNN (SBFL)|**0.6355**|**0.7126**|**0.9998**|**24.5836**|Trained by Self-bal
 
 <br>
 **2.Self-balancing Focal Loss:**  
-![1](./results/compare_loss_font14_2.svg)  
+![compare_loss](./results/compare_loss_font14_2.svg)  
 **Fig. 2. &nbsp;SBFL can balance the class0 loss and class1 loss in the training process to get better performance.**
 <br>  
 --  
