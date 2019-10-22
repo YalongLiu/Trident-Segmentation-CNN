@@ -42,11 +42,11 @@ F|TS-CNN (CC=64)|0.6186|0.6952|**0.9998**|28.3413|Double channel counts to 64
 G|TS-CNN (SBFL)|**0.6355**|**0.7126**|**0.9998**|**24.5836**|Trained by Self-balancing Focal Loss
 
 <br>
-**2.Self-balancing Focal Loss:**
+**2.Self-balancing Focal Loss:**  
 <div align=center><img src=./results/compare_loss_font14_2.svg></div>
 <div align=center> <b>Fig. 2. &nbsp;SBFL can balance the class0 loss and class1 loss in the training process to get better performance.</b></div>  
 <br>  
---
+--  
 **Table 1. Results on MR images**  
 
 N&nbsp;|&nbsp; &nbsp; &nbsp; &nbsp;Original MR&nbsp;&nbsp;&nbsp; &nbsp; <br>images|Mukherjee et al. [4]|Residual U-Net [7]|&nbsp;  RS-RCNN [2]&nbsp; |Our Method  (TS-CNN)
