@@ -93,7 +93,7 @@ def focal_loss(y_true, y_pred):
     return K.mean(loss)
 
 
-def self_adaptive_balance_loss(y_true, y_pred):
+def self_balancing_focal_loss(y_true, y_pred):
     # Hyper parameters
     gamma = 1  # For hard segmentation
 
