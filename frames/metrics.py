@@ -95,6 +95,7 @@ def focal_loss(y_true, y_pred):
 
 def self_balancing_focal_loss(y_true, y_pred):
     # Hyper parameters
+    
     gamma = 1  # For hard segmentation
 
     # Original focal loss for segmentation
