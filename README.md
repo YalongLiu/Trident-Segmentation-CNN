@@ -1,9 +1,11 @@
 # Trident Segmentation CNN  
 ---Yalong Liu---  
+[Arxiv Paper](https://arxiv.org/abs/1910.09773)  
+Liu, Yalong, Jie Li, Miaomiao Wang, Zhicheng Jiao, Jian Yang, and Xianjun Li. "Trident Segmentation CNN: A Spatiotemporal Transformation CNN for Punctate White Matter Lesions Segmentation in Preterm Neonates." arXiv preprint arXiv:1910.09773 (2019).  
 
 **Key words:** Deep Learning; Punctate white matter lesions (PWMLs); Brain tumor segmentation.
 <br>  
-![TS-CNN](./results/TS-CNN.png)
+![TS-CNN](./imgs/TS-CNN.png)
 
 Fig. 1. A Deep Learning method to segment punctate white matter lesions (PWMLs).
 
@@ -42,7 +44,7 @@ F|TS-CNN (CC=64)|0.6186|0.6952|**0.9998**|28.3413|Double channel counts to 64
 G|TS-CNN (SBFL)|**0.6355**|**0.7126**|**0.9998**|**24.5836**|Trained by Self-balancing Focal Loss
 
 **2.Self-balancing Focal Loss:**  
-![compare_loss](./results/compare_loss_font14_2.svg)  
+![compare_loss](./imgs/compare_loss_font14_2.svg)  
 Fig. 2. &nbsp;SBFL can balance the class0 loss and class1 loss in the training process to get better performance.  
  
 .  
@@ -52,17 +54,21 @@ Table 1. Results on MR images
 N&nbsp;|&nbsp; &nbsp; &nbsp; &nbsp;Original MR&nbsp;&nbsp;&nbsp; &nbsp; <br>images|Mukherjee et al. [4]|Residual U-Net [7]|&nbsp;  RS-RCNN [2]&nbsp; |Our Method  (TS-CNN)
 :-|:-:|:-:|:-:|:-:|:-:|  
 
-&nbsp;1&nbsp;|![1](./results/69_61.png)
+&nbsp;1&nbsp;|![1](./imgs/69_61.png)
 :-|:-:|
-&nbsp;2&nbsp;|![2](./results/75_60.png)  
-&nbsp;3&nbsp;|![3](./results/75_88.png)  
-&nbsp;4&nbsp;|![4](./results/107_68.png)
-&nbsp;5&nbsp;|![5](./results/109_54.png)
+&nbsp;2&nbsp;|![2](./imgs/75_60.png)  
+&nbsp;3&nbsp;|![3](./imgs/75_88.png)  
+&nbsp;4&nbsp;|![4](./imgs/107_68.png)
+&nbsp;5&nbsp;|![5](./imgs/109_54.png)
 
 -----
 ### Citation
 
-If you use Trident Segmentation CNN in your research, please cite the paper (Uploading now)...
+If you use Trident Segmentation CNN in your research, please cite the paper ([Arxiv](https://arxiv.org/abs/1910.09773))
+
+```
+Liu, Yalong, Jie Li, Miaomiao Wang, Zhicheng Jiao, Jian Yang, and Xianjun Li. "Trident Segmentation CNN: A Spatiotemporal Transformation CNN for Punctate White Matter Lesions Segmentation in Preterm Neonates." arXiv preprint arXiv:1910.09773 (2019).
+```
 
 
 
