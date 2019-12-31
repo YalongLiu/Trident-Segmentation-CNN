@@ -8,7 +8,8 @@ Liu, Yalong, Jie Li, Miaomiao Wang, Zhicheng Jiao, Jian Yang, and Xianjun Li. "T
 **This repository includes:**  
 1.T1WI of 10 patients for test(Full dataset is not allowed to be made public)  
 2.Full code for model training and inference  
-##Contributions:  
+
+## Contributions:  
 **1.Trident Segmentation CNN** (Convert spatial information into temporal information, which reduces the consumption of computing resources.)   
 
 ![TS-CNN](./imgs/TS-CNN.png)  
@@ -27,7 +28,7 @@ Tensorflow-gpu 1.12.0
 CUDA 9.0  
 (tested ok on windows 10)
 ## Getting Started
-1.Download the repositories.  
+1.Download the repositories.(Model training is not time consuming, so the weights file is not available)  
 2.Choose a mode in the main.py('inference' or 'training').  
 3.Change parameters in configs/pwml/config_TridentSegNet.py according to the comment  in the file.  
 Enjoy!
