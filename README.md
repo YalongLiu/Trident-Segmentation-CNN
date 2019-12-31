@@ -3,12 +3,14 @@
 [Arxiv Paper](https://arxiv.org/abs/1910.09773)  
 Liu, Yalong, Jie Li, Miaomiao Wang, Zhicheng Jiao, Jian Yang, and Xianjun Li. "Trident Segmentation CNN: A Spatiotemporal Transformation CNN for Punctate White Matter Lesions Segmentation in Preterm Neonates." arXiv preprint arXiv:1910.09773 (2019).  
 
-**Key words:** Deep Learning; Punctate white matter lesions (PWMLs); Brain tumor segmentation.
+**Key words:** Deep Learning; Punctate white matter lesions (PWMLs); Brain tumor segmentation.  
 
-**Contributions:**  
+**This repository includes:**  
+1.T1WI of 10 patients for test(Full dataset is not allowed to be made public)  
+2.Full code for model training and inference  
+##Contributions:  
 **1.Trident Segmentation CNN** (Convert spatial information into temporal information, which reduces the consumption of computing resources.)   
 
-<br>  
 ![TS-CNN](./imgs/TS-CNN.png)  
   
 Fig. 1. A Deep Learning method to segment punctate white matter lesions (PWMLs).  
@@ -19,9 +21,6 @@ Fig. 1. A Deep Learning method to segment punctate white matter lesions (PWMLs).
 
 Where SBFL<sub>0</sub>  and  SBFL<sub>1</sub> are the focal loss of background and foreground pixels without &alpha; . sum(SBFL<sub>0</sub>)  and sum(SBFL<sub>1</sub>)  are the sums of SBFL<sub>0</sub> and SBFL<sub>1</sub> . So sum(SBFL<sub>0</sub>)+sum(SBFL<sub>0</sub>)  represents the total loss of the model. Intuitively, we can use the ratio of SBFL<sub>0</sub>  and sum(SBFL<sub>0</sub>)+sum(SBFL<sub>0</sub>)   to balance the loss of  SBFL<sub>0</sub> and SBFL<sub>1</sub> . However, this may result in a sharp oscillation of the model parameters. In order to segment PWML, we will focus on the segmentation of the lesion areas when balancing the loss of positive and negative samples. That is,  &beta; should always be greater than 0.5. It also should ensure that the model does not only focus on the segmentation of positive areas, so we limit the maximum value of  &beta; to 0.9 by a coefficient of 0.4. Finally, the  SBFL is composed of  SBFL<sub>1</sub> weighted by &beta;  and  SBFL<sub>0</sub> weighted by 1-&beta;.(For more information, please refer to my [Arxiv paper](https://arxiv.org/abs/1910.09773))  
 
-**This repository includes:**  
-1.T1WI of 10 patients for test(Full dataset is not allowed to be made public)  
-2.Full code for model training and inference  
 ## Requirements
 Python 3.6.3  
 Tensorflow-gpu 1.12.0  
