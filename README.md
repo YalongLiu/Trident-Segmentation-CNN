@@ -28,7 +28,7 @@ Tensorflow-gpu 1.12.0
 CUDA 9.0  
 (tested ok on windows 10)
 ## Getting Started
-1.Download the repositories.  
+1.Download the repositories.(Model training is not time consuming, so the weights file is not available)  
 2.Choose a mode in the main.py('inference' or 'training').  
 3.Change parameters in configs/pwml/config_TridentSegNet.py according to the comment  in the file.  
 Enjoy!
