@@ -400,8 +400,10 @@ class BaseModel:
         # Callbacks
         callbacks = [
             keras.callbacks.TensorBoard(log_dir=self.log_dir, histogram_freq=0, write_graph=True, write_images=False),
+            # keras.callbacks.ModelCheckpoint(self.checkpoint_path, monitor='val_loss', verbose=0, save_weights_only=True,
+            #                                 save_best_only=self.config.SAVE_BEST, all_epochs=self.config.EPOCHES),  # My own weights saving strategy
             keras.callbacks.ModelCheckpoint(self.checkpoint_path, monitor='val_loss', verbose=0, save_weights_only=True,
-                                            save_best_only=self.config.SAVE_BEST, all_epochs=self.config.EPOCHES),
+                                            save_best_only=self.config.SAVE_BEST),
             keras.callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.5, patience=self.config.PATIENCE, min_lr=0)
         ]
 
