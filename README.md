@@ -8,7 +8,8 @@ Liu, Yalong, Jie Li, Miaomiao Wang, Zhicheng Jiao, Jian Yang, and Xianjun Li. "T
 **This repository includes:**  
 1.T1WI of 10 patients for test(Full dataset is not allowed to be made public)  
 2.Full code for model training and inference  
-##Contributions:  
+
+## Contributions:  
 **1.Trident Segmentation CNN** (Convert spatial information into temporal information, which reduces the consumption of computing resources.)   
 
 ![TS-CNN](./imgs/TS-CNN.png)  
