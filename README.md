@@ -16,7 +16,7 @@ Liu, Yalong, Jie Li, Miaomiao Wang, Zhicheng Jiao, Jian Yang, and Xianjun Li. "T
   
 Fig. 1. A Deep Learning method to segment punctate white matter lesions (PWMLs).  
   
-**2.Self-balancing Focal Loss** (Balancing the loss of different classes in class imbalance situation and boost the model performance.)  
+**2.Self-balancing Focal Loss** (Automatically balancing the loss of different classes in class imbalance situation and boost the model performance.)  
   
 <a href="https://www.codecogs.com/eqnedit.php?latex=SBF{L_0}&space;=&space;-&space;\left(&space;{1&space;-&space;{y_{true}}}&space;\right)&space;\times&space;y_{pred}^\gamma&space;\times&space;\log&space;\left(&space;{1&space;-&space;{y_{pred}}&space;&plus;&space;\varepsilon&space;}&space;\right),\\\\&space;SBF{L_1}&space;=&space;-&space;{y_{true}}&space;\times&space;{\left(&space;{1&space;-&space;{y_{pred}}}&space;\right)^\gamma&space;}&space;\times&space;\log&space;\left(&space;{{y_{pred}}&space;&plus;&space;\varepsilon&space;}&space;\right),\\\\&space;\beta&space;=&space;\frac{{0.4&space;\times&space;sum\left(&space;{SBF{L_0}}&space;\right)}}{{sum\left(&space;{SBF{L_0}}&space;\right)&space;&plus;&space;sum\left(&space;{SBF{L_1}}&space;\right)}}&space;&plus;&space;0.5,\\\\&space;SBFL&space;=&space;\beta&space;\times&space;SBF{L_1}&space;&plus;&space;\left(&space;{1&space;-&space;\beta&space;}&space;\right)&space;\times&space;SBF{L_0}," target="_blank"><img src="https://latex.codecogs.com/gif.latex?\\SBF{L_0}&space;=&space;-&space;\left(&space;{1&space;-&space;{y_{true}}}&space;\right)&space;\times&space;y_{pred}^\gamma&space;\times&space;\log&space;\left(&space;{1&space;-&space;{y_{pred}}&space;&plus;&space;\varepsilon&space;}&space;\right),\\\\&space;SBF{L_1}&space;=&space;-&space;{y_{true}}&space;\times&space;{\left(&space;{1&space;-&space;{y_{pred}}}&space;\right)^\gamma&space;}&space;\times&space;\log&space;\left(&space;{{y_{pred}}&space;&plus;&space;\varepsilon&space;}&space;\right),\\\\&space;\beta&space;=&space;\frac{{0.4&space;\times&space;sum\left(&space;{SBF{L_0}}&space;\right)}}{{sum\left(&space;{SBF{L_0}}&space;\right)&space;&plus;&space;sum\left(&space;{SBF{L_1}}&space;\right)}}&space;&plus;&space;0.5,\\\\&space;SBFL&space;=&space;\beta&space;\times&space;SBF{L_1}&space;&plus;&space;\left(&space;{1&space;-&space;\beta&space;}&space;\right)&space;\times&space;SBF{L_0}," title="\\SBF{L_0} = - \left( {1 - {y_{true}}} \right) \times y_{pred}^\gamma \times \log \left( {1 - {y_{pred}} + \varepsilon } \right),\\\\ SBF{L_1} = - {y_{true}} \times {\left( {1 - {y_{pred}}} \right)^\gamma } \times \log \left( {{y_{pred}} + \varepsilon } \right),\\\\ \beta = \frac{{0.4 \times sum\left( {SBF{L_0}} \right)}}{{sum\left( {SBF{L_0}} \right) + sum\left( {SBF{L_1}} \right)}} + 0.5,\\\\ SBFL = \beta \times SBF{L_1} + \left( {1 - \beta } \right) \times SBF{L_0}," /></a>  
   
@@ -51,7 +51,7 @@ G|TS-CNN (SBFL)|**0.6355**|**0.7126**|**0.9998**|**24.5836**|Trained by Self-bal
 
 **2.Self-balancing Focal Loss:**  
 ![compare_loss](./imgs/compare_loss_font14_2.svg)  
-Fig. 2. &nbsp;SBFL can balance the class0 loss and class1 loss in the training process to get better performance.  
+Fig. 2. &nbsp;SBFL can automatically balance the class0 loss and class1 loss in the training process to get better performance.  
 
 ---  
 Table 1. Results on MR images
