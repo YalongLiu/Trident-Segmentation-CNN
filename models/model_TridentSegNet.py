@@ -84,8 +84,8 @@ def trident_graph(inputs, k):
     x = Activation(activation='relu')(x)
     x = TimeDistributed(Conv2D(k, (3, 3), padding='same'))(x)
 
-    inputs = TimeDistributed(BatchNormalization())(inputs)
-    shortcut = TimeDistributed(Conv2D(k, (1, 1)))(inputs)
+    shortcut = TimeDistributed(BatchNormalization())(inputs)
+    shortcut = TimeDistributed(Conv2D(k, (1, 1)))(shortcut)
 
     c1 = Add()([shortcut, x])
     c1c = time_distributed_concat(c1)

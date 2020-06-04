@@ -14,9 +14,9 @@ class TargetDataset(utils.Dataset):
 
     def __init__(self, config):
         super(TargetDataset, self).__init__()
-        self.TEST_DIR = "gtFine/test"
         # self.ori_8b_path = '/media/james/Repository/datasets/PWML/ori/8b'
-        self.ori_8b_path = 'F:/datasets/PWML/ori/8b'
+        # self.ori_8b_path = 'F:/datasets/PWML/ori/8b'
+        self.ori_8b_path = './test_data/ori'
         self.cord = []
         self.split_dataset(config)
 
@@ -84,7 +84,7 @@ class TargetDataset(utils.Dataset):
         info = self.image_info[image_id]
         path_list = info['path']
         img_num = int(path_list[2][:-4])
-        image_path = self.ori_8b_path + '/input/' + path_list[1] + '/'
+        image_path = self.ori_8b_path + '/inputs/' + path_list[1] + '/'
 
         image_0 = imread(image_path + str(img_num - 1) + '.png')
         image_1 = imread(image_path + str(img_num) + '.png')
@@ -105,7 +105,7 @@ class TargetDataset(utils.Dataset):
         """
         info = self.image_info[image_id]
         path_list = info['path']
-        path = self.ori_8b_path + '/gt'
+        path = self.ori_8b_path + '/gts'
         for single in path_list[1:]:
             path = path + '/' + single
         if path[-4:] == '.npy':

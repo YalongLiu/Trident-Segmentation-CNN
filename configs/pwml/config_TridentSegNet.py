@@ -12,10 +12,9 @@ from frames.metrics import mean_iou, dice_coef_metrics, self_balancing_focal_los
 ############################################################
 class ModelConfig(Config):
     # Modify to your own path
-    DATA_DIR = './test_data'  # choose input data
-    # DATA_DIR = 'F:/datasets/PWML/cut2skull/8b'  # choose input data
-    WEIGHTS_PATH = ''  # Weights to load
-    # WEIGHTS_PATH = "F:/datasets/weights/tridentsegnet_pwml_cut2skull_8b_98765_20190922T1712_0050_pred_0.7.h5"
+    DATA_DIR = './test_data/cut2skull'  # choose input data
+    # WEIGHTS_PATH = ''  # If Weight path ='', then train from scratch
+    WEIGHTS_PATH = './logs/tridentsegnet.h5'  # Train/Inference from weights
 
     ###################################################################################################################
     #                         Modifications to the following section are NOT recommended!                             #
@@ -39,10 +38,10 @@ class ModelConfig(Config):
 
     LOGDIR = './logs'
     # Inference directors
-    INPUT_DIR = DATA_DIR + "/input"
-    GT_DIR = DATA_DIR + "/gt"
-    PRED_DIR = DATA_DIR + '_pred'
-    GEN_DIR = DATA_DIR + '_gen'
+    INPUT_DIR = DATA_DIR + "/inputs"
+    GT_DIR = DATA_DIR + "/gts"
+    PRED_DIR = DATA_DIR + '_preds'
+    GEN_DIR = DATA_DIR + '_gens'
 
     OPTIMIZER = Adam
     # OPTIMIZER = SGD

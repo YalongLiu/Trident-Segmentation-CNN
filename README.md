@@ -5,9 +5,9 @@ Liu, Yalong, Jie Li, Miaomiao Wang, Zhicheng Jiao, Jian Yang, and Xianjun Li. "T
 
 **Key words:** Deep Learning; Punctate white matter lesions (PWMLs); Brain tumor segmentation.  
 
-**This repository includes:**  
-1.T1WI of 10 patients for test(Full dataset is not allowed to be made public)  
-2.Full code for model training and inference  
+**This repository(~1.5Mb) includes:**  
+1.T1WI of 10 patients for test. (Full dataset is not allowed to be made public)  
+2.Full code for model training and inference.  
 
 ## Contributions:  
 **1.Trident Segmentation CNN** (Convert spatial information into temporal information, which reduces the consumption of computing resources.)   
@@ -26,12 +26,12 @@ Where SBFL<sub>0</sub>  and  SBFL<sub>1</sub> are the focal loss of background a
 Python 3.6.3  
 Tensorflow-gpu 1.12.0  
 CUDA 9.0  
-(tested ok on windows 10)
+(Tested on windows 10)
 ## Getting Started
-1.Download the repositories.(Model training is not time consuming, so the weights file is not available)  
-2.Choose a mode in the main.py('inference' or 'training').  
-3.Change parameters in configs/pwml/config_TridentSegNet.py according to the comment  in the file.  
-Enjoy!
+1. Download pretrained weights ([BaiDuYun](https://pan.baidu.com/s/1ayjcPUaGXyzmemJvrTC1GA) (Password: aivi), GoogleDrive(upload later)). and put it in the './logs' folder.  
+2. Choose a mode in the main.py('inference' or 'training') and run the code.  
+  
+(Optional) You can modify parameters in './configs/pwml/config_TridentSegNet.py' according to the comments.  
 
 ## Acknowledgment
 This repo borrows tons of code from  
