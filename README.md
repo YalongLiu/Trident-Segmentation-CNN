@@ -1,11 +1,10 @@
 # Trident Segmentation CNN  
 ---Yalong Liu---  
-[Arxiv Paper](https://arxiv.org/abs/1910.09773)  
-Liu, Yalong, Jie Li, Miaomiao Wang, Zhicheng Jiao, Jian Yang, and Xianjun Li. "Trident Segmentation CNN: A Spatiotemporal Transformation CNN for Punctate White Matter Lesions Segmentation in Preterm Neonates." arXiv preprint arXiv:1910.09773 (2019).  
+Liu, Yalong, Jie Li, Miaomiao Wang, Zhicheng Jiao, Jian Yang, and Xianjun Li. "Trident Segmentation CNN: A Spatiotemporal Transformation CNN for Punctate White Matter Lesions Segmentation in Preterm Neonates." arXiv preprint arXiv:1910.09773 (2019). [Arxiv Paper](https://arxiv.org/abs/1910.09773)  
 
 **Key words:** Deep Learning; Punctate white matter lesions (PWMLs); Brain tumor segmentation.  
 
-**This repository(~1.5Mb) includes:**  
+**This repository(~1.5MB) includes:**  
 1.T1WI of 10 patients for test. (Full dataset is not allowed to be made public)  
 2.Full code for model training and inference.  
 
@@ -28,7 +27,7 @@ Tensorflow-gpu 1.12.0
 CUDA 9.0  
 (Tested on windows 10)
 ## Getting Started
-1. Download pretrained weights ([BaiDuYun](https://pan.baidu.com/s/1ayjcPUaGXyzmemJvrTC1GA) (Password: aivi), GoogleDrive(upload later)). and put it in the './logs' folder.  
+1. Download pretrained weights(~257MB) ([BaiDuYun](https://pan.baidu.com/s/1ayjcPUaGXyzmemJvrTC1GA) (Password: aivi), [GoogleDrive](https://drive.google.com/file/d/1Ug8l4_s-DKZJ-A9z3u82pCJWvc6Fc99U/view?usp=sharing)). and put it in the './logs' folder.  
 2. Choose a mode in the main.py('inference' or 'training') and run the code.  
   
 (Optional) You can modify parameters in './configs/pwml/config_TridentSegNet.py' according to the comments.  
