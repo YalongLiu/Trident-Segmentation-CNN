@@ -24,7 +24,7 @@ Where SBFL<sub>0</sub>  and  SBFL<sub>1</sub> are the focal loss of background a
 
 ## Requirements
 Python 3.6.3  
-Tensorflow-gpu 1.12.0  
+Tensorflow-gpu 1.15.2  
 CUDA 9.0  
 (Tested on windows 10)
 ## Getting Started

@@ -147,7 +147,7 @@ class BaseModel:
                     image, gt = self.load_image_gt(dataset, image_id, augmentation=augmentation)
 
                 if np.sum(gt) == 0:
-                    logging.warning('GT is all Zeros!')
+                    # logging.warning('GT is all Zeros!')
                     continue
                 # Pre-progress
                 image, gt = generate_patches(image, gt[:, :, 0], self.config.PATCH_SIZE)
