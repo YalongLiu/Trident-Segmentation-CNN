@@ -24,7 +24,7 @@ Where SBFL<sub>0</sub>  and  SBFL<sub>1</sub> are the focal loss of background a
 ## Requirements
 Python 3.6.3  
 Tensorflow-gpu 1.15.2  
-CUDA 9.0  
+CUDA 10.0  
 (Tested on windows 10)
 ## Getting Started
 1. Download pretrained weights(~257MB) ([BaiDuYun](https://pan.baidu.com/s/1ayjcPUaGXyzmemJvrTC1GA) (Password: aivi), [GoogleDrive](https://drive.google.com/file/d/1Ug8l4_s-DKZJ-A9z3u82pCJWvc6Fc99U/view?usp=sharing)). and put it in the './logs' folder.  
