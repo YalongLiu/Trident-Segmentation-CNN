@@ -8,4 +8,4 @@ h5py==2.10.0
 scipy==1.4.1
 SimpleITK==1.2.4
 skimage==0.17.2
-tensorflow==2.2.0
+tensorflow==2.7.2
